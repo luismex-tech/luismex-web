@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LUISMEX | Audio y Video Spots Profesionales</title>
+<meta name="description" content="Haz que tu negocio suene y venda. Especialistas en audio spots y video spots con locución femenina profesional. Entrega en 24h. Servicio nacional e internacional.">
+<meta name="keywords" content="audio spots, video spots, produccion publicitaria, locucion femenina, spots para radio, publicidad en redes sociales, LUISMEX, Leon Guanajuato, agencia de audio">
+<meta name="author" content="LUISMEX">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.luismex.mx/">
+<meta property="og:title" content="LUISMEX | Audio y Video Spots Profesionales">
+<meta property="og:description" content="Especialistas en producción de audio y video spots. Haz que tu negocio suene y venda. Entrega en menos 24 horas.">
+<meta property="og:image" content="https://www.luismex.mx/imagen-miniatura.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.luismex.mx/">
+<meta property="twitter:title" content="LUISMEX | Audio y Video Spots Profesionales">
+<meta property="twitter:description" content="Especialistas en producción de audio y video spots. Haz que tu negocio suene y venda. Entrega en 24 horas.">
+<meta property="twitter:image" content="https://www.luismex.mx/imagen-miniatura.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "LUISMEX Producción Publicitaria",
+  "description": "Estudio de producción publicitaria especializado en spots de audio y video con locución profesional.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "León",
+    "addressRegion": "GTO",
+    "addressCountry": "MX"
+  },
+  "telephone": "+52-477-677-2422",
+  "url": "https://www.luismex.mx",
+  "sameAs": ["https://www.facebook.com/gallostudiospots"]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul-deep: #042C53;
+    --azul-mid: #185FA5;
+    --azul-bright: #378ADD;
+    --azul-light: #E6F1FB;
+    --azul-pale: #f0f7ff;
+    --teal: #1D9E75;
+    --teal-light: #E1F5EE;
+    --text-dark: #1a2332;
+    --text-mid: #4a5568;
+    --text-muted: #718096;
+    --border: rgba(24,95,165,0.15);
+    --white: #ffffff;
+    --shadow: 0 4px 24px rgba(4,44,83,0.10);
+    --radius: 14px;
+    --radius-sm: 8px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f2f7fc;
+    color: var(--text-dark);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--azul-deep);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 600;
+    box-shadow: 0 2px 20px rgba(4,44,83,0.3);
+  }
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; position: relative; z-index: 601;}
+  .logo-text { line-height: 1; }
+  .logo-text .brand { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: white; letter-spacing: 2px; }
+  .logo-text .brand span { color: var(--azul-bright); }
+  .logo-text .sub { font-size: 11px; color: var(--azul-bright); letter-spacing: 1px; text-transform: uppercase; font-weight: 500; margin-top: 2px; }
+  
+  .nav-links { display: flex; gap: 24px; list-style: none; align-items: center; }
+  .nav-links a { color: #B5D4F4; text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: white; }
+
+  .btn-header {
+    background: var(--azul-bright); color: white; border: none; padding: 8px 18px;
+    border-radius: 30px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600;
+    cursor: pointer; transition: background 0.2s; text-decoration: none;
+  }
+  .btn-header:hover { background: #185FA5; }
+
+  /* ── MENÚ HAMBURGUESA (MÓVIL) ── */
+  .btn-ham {
+    display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; position: relative; z-index: 601;
+  }
+  .btn-ham span {
+    display: block; width: 26px; height: 3px; background: white; border-radius: 3px; transition: 0.3s;
+  }
+  .mobile-menu {
+    position: fixed; top: 0; left: 0; width: 100%; background: var(--azul-deep);
+    padding: 90px 24px 30px; display: flex; flex-direction: column; gap: 20px;
+    transform: translateY(-100%); transition: transform 0.3s ease-in-out; z-index: 599;
+    box-shadow: 0 10px 20px rgba(4,44,83,0.3);
+  }
+  .mobile-menu.active { transform: translateY(0); }
+  .mobile-menu a {
+    color: white; text-decoration: none; font-size: 18px; font-weight: 600; text-align: center; display: block;
+  }
+  .mobile-menu .btn-header { margin-top: 10px; display: inline-block; width: 100%; padding: 12px; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--azul-deep) 0%, var(--azul-mid) 60%, #1a7fc1 100%);
+    padding: 70px 24px 60px; text-align: center; position: relative; overflow: hidden;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(55,138,221,0.25); border: 1px solid rgba(55,138,221,0.5);
+    color: #B5D4F4; font-size: 11px; font-weight: 600; letter-spacing: 3px;
+    text-transform: uppercase; padding: 6px 16px; border-radius: 30px; margin-bottom: 20px;
+  }
+  .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(42px, 8vw, 76px); color: white; letter-spacing: 1px; line-height: 0.95; margin-bottom: 16px; }
+  .hero h1 span { color: #85B7EB; }
+  .hero p { color: rgba(255,255,255,0.85); font-size: 16px; max-width: 500px; margin: 0 auto 32px; line-height: 1.6; }
+  .hero-stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .stat { text-align: center; color: white; }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: #85B7EB; line-height: 1; }
+  .stat-label { font-size: 12px; color: rgba(255,255,255,0.7); letter-spacing: 1px; text-transform: uppercase; margin-top: 4px; }
+
+  /* ── MAIN LAYOUT ── */
+  .main { max-width: 1200px; margin: 0 auto; padding: 56px 24px; }
+  .section-header { text-align: center; margin-bottom: 40px; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 1px; color: var(--azul-deep); margin-bottom: 8px; line-height: 1;}
+  .section-title span { color: var(--azul-bright); }
+  .section-sub { font-size: 15px; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+  /* ── CARDS (General) ── */
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-bottom: 56px; }
+  
+  /* ── CARDS DE VIDEOS (Proporción 4:5 a 2 columnas) ── */
+  .grid-videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 700px; margin: 0 auto 56px; }
+  
+  .card-item {
+    background: white; border: 1.5px solid var(--border); border-radius: var(--radius);
+    padding: 24px; display: flex; flex-direction: column; transition: all 0.2s; position: relative;
+  }
+  .card-item:hover { border-color: var(--azul-bright); box-shadow: var(--shadow); transform: translateY(-2px); }
+  
+  .card-badge {
+    position: absolute; top: -1px; right: -1px; background: var(--azul-mid); color: white;
+    font-size: 10px; font-weight: 700; letter-spacing: 1px; padding: 6px 12px;
+    border-radius: 0 var(--radius) 0 var(--radius-sm); text-transform: uppercase;
+  }
+
+  .card-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: var(--azul-deep); letter-spacing: 0.5px; margin-bottom: 4px; }
+  .card-client { font-size: 12px; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
+  .card-desc { font-size: 13px; color: var(--text-mid); line-height: 1.5; margin-bottom: 20px; flex: 1; }
+
+  /* ── BENEFICIOS ICONOS ── */
+  .icon-box { text-align: center; padding: 32px 24px; }
+  .icon-box .icon { font-size: 40px; margin-bottom: 16px; }
+  .icon-box h3 { font-size: 16px; color: var(--azul-deep); margin-bottom: 8px; }
+  .icon-box p { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+
+  /* ── AUDIO REPRODUCTOR ── */
+  .player-ui {
+    background: var(--azul-pale); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 12px; display: flex; align-items: center; gap: 12px;
+    margin-bottom: 16px;
+  }
+  .play-btn {
+    width: 36px; height: 36px; border-radius: 50%; background: var(--azul-bright); border: none;
+    color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.2s;
+  }
+  .play-btn:hover { background: var(--azul-mid); }
+  .play-btn svg { width: 14px; height: 14px; fill: white; margin-left: 2px; }
+  .progress-container { flex: 1; }
+  .progress-bg { height: 4px; background: #dbeafe; border-radius: 2px; position: relative; }
+  .progress-fill { height: 100%; background: var(--azul-mid); border-radius: 2px; width: 0%; transition: 0.1s linear; }
+  .time-info { display: flex; justify-content: space-between; font-size: 11px; font-weight: 600; color: var(--azul-mid); margin-top: 6px; }
+  .voice-tag { font-size: 11px; font-weight: 600; color: var(--teal); background: var(--teal-light); display: inline-block; padding: 4px 10px; border-radius: 20px; }
+
+  /* ── VIDEO THUMBNAILS (Formato 4:5 con HTML5 Video) ── */
+  .video-thumb {
+    aspect-ratio: 4/5; background: var(--text-dark); border-radius: var(--radius-sm);
+    margin-bottom: 16px; position: relative; overflow: hidden;
+  }
+  .video-thumb video {
+    width: 100%; height: 100%; object-fit: cover; outline: none;
+  }
+  .video-cat { font-size: 11px; font-weight: 700; color: var(--azul-bright); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+  /* ── TESTIMONIOS ── */
+  .stars { color: #BA7517; font-size: 16px; margin-bottom: 12px; letter-spacing: 2px; }
+  .testimonial-text { font-style: italic; font-size: 14px; color: var(--text-mid); line-height: 1.6; margin-bottom: 20px; flex: 1; }
+  .author-name { font-weight: 700; font-size: 14px; color: var(--azul-deep); }
+  .author-role { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* ── FAQ ── */
+  .faq-container { max-width: 800px; margin: 0 auto 56px; }
+  details {
+    background: white; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+    margin-bottom: 12px; padding: 16px 20px; transition: all 0.2s;
+  }
+  details[open] { border-color: var(--azul-bright); box-shadow: var(--shadow); }
+  summary {
+    font-weight: 700; color: var(--azul-deep); font-size: 15px; cursor: pointer; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; outline: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; color: var(--azul-bright); font-size: 20px; transition: transform 0.2s; }
+  details[open] summary::after { content: '−'; transform: rotate(180deg); }
+  details[open] summary { margin-bottom: 12px; color: var(--azul-bright); }
+  .faq-text { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+
+  /* ── FORMULARIO Y TRUST BADGES ── */
+  .order-section {
+    background: white; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 32px; max-width: 800px; margin: 0 auto 56px;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .form-row.full { grid-template-columns: 1fr; }
+  label {
+    display: block; font-size: 12px; font-weight: 600; color: var(--text-mid);
+    margin-bottom: 6px; letter-spacing: 0.3px; text-transform: uppercase;
+  }
+  input, select, textarea {
+    width: 100%; padding: 12px 14px; border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm); font-family: 'DM Sans', sans-serif;
+    font-size: 14px; color: var(--text-dark); background: white;
+    outline: none; transition: border 0.2s;
+  }
+  input:focus, select:focus, textarea:focus { border-color: var(--azul-bright); box-shadow: 0 0 0 3px rgba(55,138,221,0.12); }
+  textarea { resize: vertical; min-height: 100px; }
+
+  .btn-pedir {
+    width: 100%; padding: 16px; background: var(--azul-deep); color: white; border: none;
+    border-radius: var(--radius); font-family: 'DM Sans', sans-serif; font-size: 16px;
+    font-weight: 700; cursor: pointer; margin-top: 16px; transition: 0.2s; letter-spacing: 0.5px;
+  }
+  .btn-pedir:hover { background: var(--azul-mid); }
+
+  .trust-badges {
+    text-align: center; margin-top: 24px; padding-top: 24px; border-top: 1px dashed var(--border);
+  }
+  .trust-title { font-size: 12px; font-weight: 700; color: var(--azul-mid); text-transform: uppercase; margin-bottom: 8px; }
+  .trust-icons { font-size: 24px; color: var(--text-muted); letter-spacing: 8px; margin-bottom: 8px; }
+  .trust-text { font-size: 12px; color: var(--text-muted); }
+
+  /* ── WHATSAPP FLOTANTE ── */
+  .btn-wa {
+    position: fixed; bottom: 28px; right: 28px; width: 60px; height: 60px;
+    border-radius: 50%; background: #25D366; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.45); z-index: 999; transition: 0.2s;
+  }
+  .btn-wa:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.6); }
+  .btn-wa svg { width: 32px; height: 32px; fill: white; }
+
+  /* ── FOOTER ── */
+  footer { background: white; border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; }
+  .footer-text { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+  .social-links { margin-bottom: 20px; }
+  .social-links a { display: inline-flex; align-items: center; justify-content: center; color: var(--azul-mid); transition: color 0.2s; }
+  .social-links a:hover { color: var(--azul-bright); transform: scale(1.1); }
+  .social-links svg { width: 32px; height: 32px; fill: currentColor; }
+
+  /* ── MEDIA QUERIES ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .btn-ham { display: flex; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .grid-videos { gap: 16px; grid-template-columns: 1fr; }
+  }
+
+  /* ── FILTROS DE CATEGORÍA ── */
+  .filter-container { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .filter-btn {
+    background: white; border: 1.5px solid var(--border); color: var(--text-mid); 
+    padding: 8px 20px; border-radius: 30px; cursor: pointer; font-family: 'DM Sans', sans-serif; 
+    font-weight: 600; font-size: 14px; transition: all 0.2s;
+  }
+  .filter-btn:hover { border-color: var(--azul-bright); color: var(--azul-deep); }
+  .filter-btn.active { background: var(--azul-deep); color: white; border-color: var(--azul-deep); box-shadow: 0 4px 12px rgba(4,44,83,0.15); }
+  .card-item.hidden { display: none; }
+
+  /* ── CTA FINAL (CIERRE DE VENTAS) ── */
+  .cta-final {
+    background: var(--azul-deep); border-radius: var(--radius);
+    padding: 40px 24px; text-align: center; margin-top: 24px; position: relative; overflow: hidden;
+  }
+  .cta-final::before {
+    content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(55,138,221,0.15) 0%, transparent 60%); z-index: 0;
+  }
+  .cta-content { position: relative; z-index: 1; }
+  .cta-final h2 { font-family: 'Bebas Neue', sans-serif; font-size: 38px; color: white; letter-spacing: 1px; margin-bottom: 12px; line-height: 1; }
+  .cta-final p { color: rgba(255,255,255,0.85); font-size: 15px; max-width: 600px; margin: 0 auto 24px; line-height: 1.6; }
+  .cta-final .btn-pedir { 
+    background: var(--azul-bright); width: auto; padding: 14px 36px; 
+    display: inline-block; text-decoration: none; margin-top: 0;
+  }
+  .cta-final .btn-pedir:hover { background: #1a7fc1; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(55,138,221,0.4); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-text">
+        <div class="brand">LUIS<span>MEX</span></div>
+        <div class="sub">Haz que tu negocio suene… y venda</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#pedidos">Cotizar</a></li>
+      <li><a href="#beneficios">Beneficios</a></li>
+    </ul>
+    
+    <button class="btn-ham" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#audio" onclick="toggleMobileMenu()">Audio Spots</a>
+  <a href="#video" onclick="toggleMobileMenu()">Video Spots</a>
+  <a href="#pedidos" class="btn-header" onclick="toggleMobileMenu()">Cotizar Pedido</a>
+  <a href="#beneficios" onclick="toggleMobileMenu()">Beneficios</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-badge">✦ Entrega Rápida ✦</div>
+  <h1>AUDIOS Y VIDEOS PROFESIONALES<br><span></span></h1>
+  <p>Para negocios que quieren vender más.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Spots Producidos</div></div>
+    <div class="stat"><div class="stat-num">-24h</div><div class="stat-label">Tiempo de Entrega</div></div>
+    <div class="stat"><div class="stat-num">🌎</div><div class="stat-label">Servicio Global</div></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <div id="audio" class="section-header">
+    <div class="section-title">Nuestros <span>Audio Spots</span></div>
+    <div class="section-sub">Escucha algunos de nuestros trabajos (DEMOS).</div>
+  </div>
+
+  <div class="filter-container">
+    <button class="filter-btn active" onclick="filtrarDemos('todos')">Todos</button>
+    <button class="filter-btn" onclick="filtrarDemos('rosticeria')">Rosticerías</button>
+    <button class="filter-btn" onclick="filtrarDemos('tortilleria')">Tortillerías</button>
+    <button class="filter-btn" onclick="filtrarDemos('purificadora')">Purificadoras</button>
+    <button class="filter-btn" onclick="filtrarDemos('variados')">Más Variedad</button>
+  </div>
+
+  <div class="grid-3" id="contenedorAudios">
+    
+    <div class="card-item" data-categoria="rosticeria">
+      <div class="card-badge">Alimentos</div>
+      <div class="card-title">El Pollo Azteca</div>
+      <div class="card-desc">Producción de audio para restaurante de pollos asados y comida rápida.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="1" data-src="audios/elpolloazteca.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf1"></div></div><div class="time-info"><span id="pt1">0:00</span><span id="dur1">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Cálida</span></div>
+    </div>
+    
+    <div class="card-item" data-categoria="rosticeria">
+      <div class="card-badge">Alimentos</div>
+      <div class="card-title">Rosticería Demo 2</div>
+      <div class="card-desc">Spot dinámico para promociones de fin de semana.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="2" data-src="audios/rosticeria2.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf2"></div></div><div class="time-info"><span id="pt2">0:00</span><span id="dur2">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Enérgica</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="rosticeria">
+      <div class="card-badge">Alimentos</div>
+      <div class="card-title">Rosticería Demo 3</div>
+      <div class="card-desc">Producción orientada a servicio a domicilio y paquetes familiares.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="3" data-src="audios/rosticeria3.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf3"></div></div><div class="time-info"><span id="pt3">0:00</span><span id="dur3">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Promocional</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="tortilleria">
+      <div class="card-badge">Tradicional</div>
+      <div class="card-title">Tortillería El Siviral</div>
+      <div class="card-desc">Spot comercial tradicional para tortillería local.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="4" data-src="audios/elsiviral.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf4"></div></div><div class="time-info"><span id="pt4">0:00</span><span id="dur4">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Institucional</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="tortilleria">
+      <div class="card-badge">Tradicional</div>
+      <div class="card-title">Tortillería Esperanza</div>
+      <div class="card-desc">Publicidad para negocio con enfoque en calidad y tradición.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="5" data-src="audios/tortilleriaesperanza.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf5"></div></div><div class="time-info"><span id="pt5">0:00</span><span id="dur5">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Cercana</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="tortilleria">
+      <div class="card-badge">Tradicional</div>
+      <div class="card-title">Tortillería Demo 3</div>
+      <div class="card-desc">Spot enfocado en apertura de nueva sucursal y precios.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="6" data-src="audios/tortilleria3.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf6"></div></div><div class="time-info"><span id="pt6">0:00</span><span id="dur6">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Dinámica</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="purificadora">
+      <div class="card-badge">Servicios</div>
+      <div class="card-title">Purificadora Demo 1</div>
+      <div class="card-desc">Spot comercial claro y directo para servicios de agua purificada a domicilio.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="7" data-src="audios/purificadora.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf7"></div></div><div class="time-info"><span id="pt7">0:00</span><span id="dur7">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Confiable</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="purificadora">
+      <div class="card-badge">Servicios</div>
+      <div class="card-title">Purificadora Demo 2</div>
+      <div class="card-desc">Producción enfocada en higiene, tecnología de ósmosis y calidad.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="8" data-src="audios/purificadora2.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf8"></div></div><div class="time-info"><span id="pt8">0:00</span><span id="dur8">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Institucional</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="purificadora">
+      <div class="card-badge">Servicios</div>
+      <div class="card-title">Purificadora Demo 3</div>
+      <div class="card-desc">Mensaje promocional para venta a mayoreo y rellenado.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="9" data-src="audios/purificadora3.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf9"></div></div><div class="time-info"><span id="pt9">0:00</span><span id="dur9">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Comercial</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="variados">
+      <div class="card-badge">Automotriz</div>
+      <div class="card-title">Dr. Battery</div>
+      <div class="card-desc">Spot publicitario para servicios de venta e instalación de baterías.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="10" data-src="audios/drbatery.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf10"></div></div><div class="time-info"><span id="pt10">0:00</span><span id="dur10">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Enérgica</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="variados">
+      <div class="card-badge">Belleza</div>
+      <div class="card-title">Killy Nails</div>
+      <div class="card-desc">Spot publicitario elegante para salón de belleza y uñas.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="11" data-src="audios/killynails.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf11"></div></div><div class="time-info"><span id="pt11">0:00</span><span id="dur11">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Sofisticada</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="variados">
+      <div class="card-badge">Internacional</div>
+      <div class="card-title">Puerto Escondido E.U.A.</div>
+      <div class="card-desc">Spot comercial diseñado para restaurante y bar en Estados Unidos.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="12" data-src="audios/puertoescondido.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf12"></div></div><div class="time-info"><span id="pt12">0:00</span><span id="dur12">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Promocional</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="variados">
+      <div class="card-badge">Musical</div>
+      <div class="card-title">Intro Banda</div>
+      <div class="card-desc">Introducción musical de alto impacto para presentaciones en vivo.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="13" data-src="audios/introbanda.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf13"></div></div><div class="time-info"><span id="pt13">0:00</span><span id="dur13">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz de Impacto</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="variados">
+      <div class="card-badge">Entretenimiento</div>
+      <div class="card-title">Spot de Baile</div>
+      <div class="card-desc">Spot promocional de baile y entretenimiento para eventos.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="14" data-src="audios/baile.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf14"></div></div><div class="time-info"><span id="pt14">0:00</span><span id="dur14">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Dinámica</span></div>
+    </div>
+
+    <div class="card-item" data-categoria="variados">
+      <div class="card-badge">Clínica</div>
+      <div class="card-title">Demo Clínica Dental</div>
+      <div class="card-desc">Producción formal para agendar citas y promocionar tratamientos.</div>
+      <div class="player-ui">
+        <button class="play-btn audio-btn" data-id="15" data-src="audios/clinicadental.mp3"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+        <div class="progress-container"><div class="progress-bg"><div class="progress-fill" id="pf15"></div></div><div class="time-info"><span id="pt15">0:00</span><span id="dur15">--:--</span></div></div>
+      </div>
+      <div><span class="voice-tag">Voz Institucional</span></div>
+    </div>
+
+  </div>
+
+  <div id="video" class="section-header">
+    <div class="section-title">Nuestros <span>Video Spots</span></div>
+    <div class="section-sub">Imágenes que detienen el scroll. Producción optimizada en formato vertical (4:5).</div>
+  </div>
+  
+  <<div class="grid-videos">
+  <div class="card-item">
+    <div class="video-thumb">
+      <iframe src="https://www.youtube.com/embed/_uFij-JpH2A?rel=0&modestbranding=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="width: 100%; height: 100%; border-radius: 8px;"></iframe>
+    </div>
+    <div class="video-cat">Alimentos</div>
+    <div class="card-title">Pasteleria Dulces Momento</div>
+    <div class="card-desc">Producción visual atractiva para promoción de repostería y mesas de postres.</div>
+  </div>
+  
+  <div class="card-item">
+    <div class="video-thumb">
+      <iframe src="https://www.youtube.com/embed/hzOqciPHh18?rel=0&modestbranding=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="width: 100%; height: 100%; border-radius: 8px;"></iframe>
+    </div>
+    <div class="video-cat">Restaurante</div>
+    <div class="card-title">Mariscos Kamaron</div>
+    <div class="card-desc">Spot dinámico mostrando platillos con música en tendencia y oferta del día.</div>
+  </div>
+  
+  <div class="card-item">
+    <div class="video-thumb">
+      <iframe src="https://www.youtube.com/embed/2Eo0avnUEXo?rel=0&modestbranding=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="width: 100%; height: 100%; border-radius: 8px;"></iframe>
+    </div>
+    <div class="video-cat">Institucional</div>
+    <div class="card-title">GEED Marzo 2026</div>
+    <div class="card-desc">Video informativo y de cobertura para eventos corporativos e institucionales.</div>
+  </div>
+  
+  <div class="card-item">
+    <div class="video-thumb">
+      <iframe src="https://www.youtube.com/embed/ei_-y57zyfg?rel=0&modestbranding=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="width: 100%; height: 100%; border-radius: 8px;"></iframe>
+    </div>
+    <div class="video-cat">Evento</div>
+    <div class="card-title">Campaña Evangelística</div>
+    <div class="card-desc">Video promocional para evento religioso con locución de alto impacto.</div>
+  </div>
+</div>
+
+  <div id="pedidos" class="section-header">
+    <div class="section-title">Cotiza tu <span>Spot</span></div>
+    <div class="section-sub">Llena los datos y te contactaremos por WhatsApp con una propuesta en minutos.</div>
+  </div>
+  <div class="order-section">
+    <div class="form-row">
+      <div>
+        <label>Tipo de Servicio *</label>
+        <select id="fServicio">
+          <option value="Audio Spot">Audio Spot</option>
+          <option value="Video Spot (Vertical)">Video Spot (Vertical)</option>
+          <option value="Video Spot (Horizontal)">Video Spot (Horizontal)</option>
+        </select>
+      </div>
+      <div>
+        <label>Duración deseada *</label>
+        <select id="fDuracion">
+          <option value="30 segundos">30 segundos (Recomendado)</option>
+          <option value="15 segundos">15 segundos</option>
+          <option value="20 segundos">20 segundos</option>
+          <option value="45 segundos">45 segundos</option>
+          <option value="60 segundos">60 segundos</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label>Nombre del Negocio *</label>
+        <input type="text" id="fNegocio" placeholder="Ej: Clínica San José">
+      </div>
+      <div>
+        <label>Giro / Sector</label>
+        <input type="text" id="fGiro" placeholder="Ej: Salud / Consultorio">
+      </div>
+    </div>
+
+    <div class="form-row full">
+      <div>
+        <label>¿Qué deseas anunciar? *</label>
+        <textarea id="fAnuncio" placeholder="Describe brevemente: apertura, promoción, cambio de domicilio..."></textarea>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <label>Tu Nombre *</label>
+        <input type="text" id="fNombre" placeholder="Nombre completo">
+      </div>
+      <div>
+        <label>WhatsApp de Contacto *</label>
+        <input type="tel" id="fTel" placeholder="477-XXX-XXXX">
+      </div>
+    </div>
+
+    <button class="btn-pedir" onclick="enviarPedido()">Solicitar Cotización por WhatsApp 📲</button>
+
+    <div class="trust-badges">
+      <div class="trust-title">🌎 Servicio Nacional e Internacional</div>
+      <div class="trust-icons">💳 🏦 🅿️</div>
+      <div class="trust-text">Pagos seguros vía Transferencia (SPEI), Tarjetas de Crédito/Débito y PayPal.</div>
+    </div>
+  </div>
+
+  <div id="testimonios" class="section-header">
+    <div class="section-title">Historias de <span>Éxito</span></div>
+    <div class="section-sub">Lo que opinan las marcas y negocios que ya suenan como los grandes.</div>
+  </div>
+  <div class="grid-3" style="margin-bottom: 56px;">
+    <div class="card-item">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"El spot para nuestra purificadora fue un hit. La calidad del audio hizo que los vecinos pensaran que éramos una franquicia nacional."</p>
+      <div class="author-name">Martín García</div>
+      <div class="author-role">Agua Cristalina del Bajío</div>
+    </div>
+    <div class="card-item">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Los videos para nuestras redes sociales incrementaron las reservas un 40%. La edición es impecable y la voz transmite justo lo que queríamos."</p>
+      <div class="author-name">Silvia Méndez</div>
+      <div class="author-role">Restaurante La Trattoria</div>
+    </div>
+    <div class="card-item">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Me entregaron mi audio spot en menos de 24 horas. Sin rodeos, directo a lo que necesitaba para perifoneo y con una calidad brutal."</p>
+      <div class="author-name">Roberto Ruiz</div>
+      <div class="author-role">AutoNorte Motors</div>
+    </div>
+  </div>
+
+  <div id="faq" class="section-header">
+    <div class="section-title">Preguntas <span>Frecuentes</span></div>
+    <div class="section-sub">Resolvemos tus dudas antes de empezar tu producción.</div>
+  </div>
+  <div class="faq-container">
+    <details>
+      <summary>¿Tienen servicio fuera de México?</summary>
+      <div class="faq-text">Sí, producimos spots para toda habla hispana y Estados Unidos. Aceptamos pagos internacionales de manera segura.</div>
+    </details>
+      <details>
+      <summary>¿Cómo funciona el proceso de entrega del audio?</summary>
+      <div class="faq-text">Primero te comparto un demo en baja calidad para que puedas escuchar cómo quedará tu audio. Una vez que me confirmas que todo está correcto, realizas el pago y enseguida te envío el archivo final en alta calidad y formato original, listo para usarse donde lo necesites.</div>
+    </details>
+    <details>
+      <summary>¿Yo tengo que escribir el texto o ustedes me ayudan?</summary>
+      <div class="faq-text">Nosotros nos encargamos. Diseñaremos un guión persuasivo basándonos en la información de tu negocio.</div>
+    </details>
+    <details>
+      <summary>¿Cuánto tardan en entregar?</summary>
+      <div class="faq-text">El tiempo estándar es de 24 horas hábiles una vez aprobado el guión. Contamos con servicio express si lo necesitas urgente.</div>
+    </details>
+  </div>
+
+  <div id="beneficios" class="section-header" style="margin-top: 64px;">
+    <div class="section-title">¿Aún tienes dudas? Mira por qué invertir en un <span>Spot Profesional</span></div>
+    <div class="section-sub">Un audio o video de alta calidad no es un gasto, es tu mejor vendedor trabajando 24/7.</div>
+  </div>
+  <div class="grid-3">
+    <div class="card-item icon-box">
+      <div class="icon">🎯</div>
+      <h3>Atención Inmediata</h3>
+      <p>Un spot bien producido detiene el scroll y obliga a escuchar.</p>
+    </div>
+    <div class="card-item icon-box">
+      <div class="icon">💼</div>
+      <h3>Confianza y Autoridad</h3>
+      <p>La locución profesional le dice a tu cliente: "Somos una empresa seria y establecida".</p>
+    </div>
+    <div class="card-item icon-box">
+      <div class="icon">📈</div>
+      <h3>Llamado a la Acción</h3>
+      <p>Integramos guiones de respuesta directa que guían a la compra o contacto.</p>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <div class="cta-content">
+      <h2>¿Dejarás que tu competencia suene mejor que tú?</h2>
+      <p>Date la oportunidad de profesionalizar tu marca hoy mismo. Una voz impactante genera confianza inmediata y la inversión se paga sola con tus próximas ventas. No lo pienses más.</p>
+      <a href="#pedidos" class="btn-pedir">Quiero Cotizar mi Spot Ahora</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="logo" style="justify-content: center; margin-bottom: 16px;">
+    <div class="logo-text">
+      <div class="brand" style="color: var(--azul-deep)">LUIS<span>MEX</span></div>
+      <div class="sub" style="color: var(--azul-mid)">Haz que tu negocio suene… y venda</div>
+    </div>
+  </div>
+  
+  <div class="social-links">
+    <a href="https://www.facebook.com/gallostudiospots" target="_blank" aria-label="Visítanos en Facebook">
+      <svg viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+    </a>
+  </div>
+
+  <p class="footer-text"><strong>Servicio Nacional e Internacional</strong><br>Pagos con Transferencia, Tarjetas y PayPal.</p>
+  <p class="footer-text" style="margin-top: 16px;">© 2026 LUISMEX Producción Publicitaria. León, Guanajuato, México.</p>
+</footer>
+
+<button class="btn-wa" onclick="abrirWA('Hola LUISMEX, quiero información sobre spots.')">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</button>
+
+<script>
+  // ── MENÚ MÓVIL ──
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('active');
+  }
+
+  // ── MOTOR DE AUDIO OPTIMIZADO PARA MÓVILES ──
+  const globalAudio = new Audio();
+  let activeTrackId = null;
+
+  const formatTime = (s) => {
+      if (isNaN(s) || !isFinite(s)) return '0:00';
+      const min = Math.floor(s / 60);
+      const sec = Math.floor(s % 60);
+      return min + ':' + sec.toString().padStart(2, '0');
+  };
+
+  const iconPlay = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+  const iconPause = '<svg viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+  const resetUI = (id) => {
+      if (!id) return;
+      const btn = document.querySelector(`.audio-btn[data-id="${id}"]`);
+      const fill = document.getElementById('pf' + id);
+      const pt = document.getElementById('pt' + id);
+      if (btn) btn.innerHTML = iconPlay;
+      if (fill) fill.style.width = '0%';
+      if (pt) pt.textContent = '0:00';
+  };
+
+  globalAudio.addEventListener('loadedmetadata', () => {
+      if (activeTrackId) {
+          const dur = document.getElementById('dur' + activeTrackId);
+          if (dur) dur.textContent = formatTime(globalAudio.duration);
+      }
+  });
+
+  globalAudio.addEventListener('timeupdate', () => {
+      if (activeTrackId && !isNaN(globalAudio.duration) && isFinite(globalAudio.duration)) {
+          const percent = (globalAudio.currentTime / globalAudio.duration) * 100;
+          const fill = document.getElementById('pf' + activeTrackId);
+          const pt = document.getElementById('pt' + activeTrackId);
+          if (fill) fill.style.width = percent + '%';
+          if (pt) pt.textContent = formatTime(globalAudio.currentTime);
+      }
+  });
+
+  globalAudio.addEventListener('ended', () => {
+      resetUI(activeTrackId);
+      activeTrackId = null;
+  });
+
+  document.querySelectorAll('.audio-btn').forEach(btn => {
+      const id = btn.getAttribute('data-id');
+      const src = btn.getAttribute('data-src');
+      const fill = document.getElementById('pf' + id);
+      const progressBarContainer = fill.parentElement;
+
+      progressBarContainer.style.cursor = 'pointer';
+      progressBarContainer.style.transition = 'height 0.1s';
+      progressBarContainer.addEventListener('mouseenter', () => progressBarContainer.style.height = '6px');
+      progressBarContainer.addEventListener('mouseleave', () => progressBarContainer.style.height = '4px');
+
+      const seekAudio = (e) => {
+          if (activeTrackId !== id || isNaN(globalAudio.duration)) return;
+          
+          const rect = progressBarContainer.getBoundingClientRect();
+          const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+          let clickX = clientX - rect.left;
+          
+          clickX = Math.max(0, Math.min(clickX, rect.width));
+          const percent = clickX / rect.width;
+          globalAudio.currentTime = percent * globalAudio.duration;
+      };
+
+      progressBarContainer.addEventListener('click', seekAudio);
+      progressBarContainer.addEventListener('touchstart', seekAudio, { passive: true });
+
+      btn.addEventListener('click', () => {
+          if (activeTrackId === id) {
+              if (globalAudio.paused) {
+                  globalAudio.play();
+                  btn.innerHTML = iconPause;
+              } else {
+                  globalAudio.pause();
+                  btn.innerHTML = iconPlay;
+              }
+          } 
+          else {
+              resetUI(activeTrackId);
+              activeTrackId = id;
+              globalAudio.src = src;
+              globalAudio.load(); 
+              
+              globalAudio.play().then(() => {
+                  btn.innerHTML = iconPause;
+              }).catch(err => {
+                  console.error("Autoplay bloqueado por el navegador:", err);
+              });
+          }
+      });
+  });
+
+  // ── ENVÍO DE FORMULARIO A WHATSAPP ──
+  function abrirWA(texto) {
+    const waNum = '524776772422';
+    window.open(`https://wa.me/${waNum}?text=${encodeURIComponent(texto)}`, '_blank');
+  }
+
+  function enviarPedido() {
+    const servicio = document.getElementById('fServicio').value;
+    const duracion = document.getElementById('fDuracion').value;
+    const negocio = document.getElementById('fNegocio').value.trim();
+    const giro = document.getElementById('fGiro').value.trim();
+    const anuncio = document.getElementById('fAnuncio').value.trim();
+    const nombre = document.getElementById('fNombre').value.trim();
+    const tel = document.getElementById('fTel').value.trim();
+
+    if (!negocio || !anuncio || !nombre || !tel) {
+      alert('Por favor, completa los campos requeridos (*)');
+      return;
+    }
+
+    const msg = `*Cotización LUISMEX*\n\n` +
+      `*Servicio:* ${servicio}\n` +
+      `*Duración:* ${duracion}\n` +
+      `*Negocio:* ${negocio} (${giro})\n` +
+      `*Anuncio:* ${anuncio}\n\n` +
+      `*Nombre:* ${nombre}\n` +
+      `*Tel:* ${tel}`;
+    
+    abrirWA(msg);
+  }
+
+  // ── SISTEMA DE FILTRADO PARA LOS DEMOS ──
+  function filtrarDemos(categoria) {
+    if (!globalAudio.paused) {
+        globalAudio.pause();
+        resetUI(activeTrackId);
+        activeTrackId = null;
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      if(btn.getAttribute('onclick').includes(categoria)) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    document.querySelectorAll('.card-item[data-categoria]').forEach(card => {
+      if(categoria === 'todos' || card.getAttribute('data-categoria') === categoria) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+</script>
+</body>
+</html>
